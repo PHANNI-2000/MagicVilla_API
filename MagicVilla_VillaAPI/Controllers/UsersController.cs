@@ -17,7 +17,7 @@ namespace MagicVilla_VillaAPI.Controllers
         public UsersController(IUserRepository userRepository)
         {
             _userRepository = userRepository;
-            _response = new APIResponse();
+            this._response = new APIResponse();
         }
 
         [HttpPost("login")]
